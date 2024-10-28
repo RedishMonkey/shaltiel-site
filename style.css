@@ -72,27 +72,51 @@ li.noBullet{
 .dotLeft{
     margin-left: 1vh;
     margin-right: 2vh;
+    animation-name: leftDot;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .dotMiddle{
     margin-left: 2vh;
     margin-right: 2vh;
+    animation-name: middleDot;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .dotRight{
     margin-left: 2vh;
     margin-right: 1vh;
+    animation-name: rightDot;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .robotImage{
-    
-    width: 1%;
-    height: 1vh;
-    border-radius: 1vh;
-    border-style: solid;
-    border-color: #4F738E;
-    padding: 1vh;
-    display: inline-block;
+    height: 6vh;
 }
 
+@keyframes leftDot {
+    0% {border-color: #000; background-color: #000;}
+    25% {border-color: #D3D3D3; background-color: #D3D3D3;}
+    50% {border-color: #000; background-color: #000;}
+    100% {border-color: #000; background-color: #000;}
+  }
 
+  
+@keyframes middleDot {
+    0% {border-color: #000; background-color: #000;}
+    25% {border-color: #000; background-color: #000;}
+    50% {border-color: #D3D3D3; background-color: #D3D3D3;}
+    75% {border-color: #000; background-color: #000;}
+    100% {border-color: #000; background-color: #000;}
+  }
+
+
+@keyframes rightDot {
+    0% {border-color: #000; background-color: #000;}
+    50% {border-color: #000; background-color: #000;}
+    75% {border-color: #D3D3D3; background-color: #D3D3D3;}
+    100% {border-color: #000; background-color: #000;}
+  }
 
